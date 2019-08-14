@@ -10,6 +10,7 @@
 </template>
 
 <script>
+import { apiAddress } from '@/config/api'
 import lottery from '../components/lottery'
 import mySelect from '../components/mySelect'
 import TEST from '../components/test'
@@ -66,6 +67,15 @@ export default {
     mySelect,
     TEST,
     trainCity
+  },
+  mounted(){
+     apiAddress({     
+      type: 0,     
+      sort: 1    
+    }).then(res => {
+      // 获取数据成功后的其他操作
+      
+    })   
   },
   methods:{
     onChangeOption(index){

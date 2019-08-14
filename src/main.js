@@ -3,7 +3,17 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import { 
+  Toast,
+  Progress,
+  Swipe,
+  SwipeItem,
+  Dialog
+} from 'vant'
+import 'amfe-flexible'
+import clipboard from 'clipboard';
+Vue.config.productionTip = false
+Vue.use(Toast).use(Progress).use(Swipe).use(SwipeItem).use(Dialog)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
